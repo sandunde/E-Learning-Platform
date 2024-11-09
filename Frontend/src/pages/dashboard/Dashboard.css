@@ -1,0 +1,60 @@
+.name-text {
+    color: blue;
+}
+
+.profile-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-top     : 60px;
+    margin-bottom: 50px;
+}
+
+.shadow-box {
+    box-shadow   : 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding      : 20px;
+}
+
+.info-grid {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 16px;
+    text-align           : left;
+}
+
+.card-body {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.card-body img {
+    height       : 100px;
+    border       : 1px solid;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 20px;
+    gap            : 20px;
+}
+
+.button-container button {
+    width: 150px;
+}
+
+.info-btn {
+    background-color: white;
+    border          : none;
+    padding-top     : 0;
+}
+
+.info-btn:hover {
+    background-color: white;
+    border          : none;
+}

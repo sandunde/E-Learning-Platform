@@ -1,0 +1,56 @@
+.student-details-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .student-table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .student-table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .student-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .student-table tbody tr:hover {
+    background-color: #e9f4ff;
+  }
+  
+  .student-table tbody td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .no-users {
+    font-size: 1.1rem;
+    color: #888;
+  }
+  
