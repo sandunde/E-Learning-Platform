@@ -10,37 +10,39 @@ import "./Nav.css";
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="dark" expand="lg" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/home" className="brand-img">
             <img src={Logo} alt="logo" /> Moodle.LK
           </Navbar.Brand>
-          <Nav className="">
-          <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/dashboard">Key Links</Nav.Link>
-            <Nav.Link href="#features">FAQ</Nav.Link>
-            <Nav.Link href="#pricing">Results</Nav.Link>
-            <Dropdown className="dropdown">
-              <Dropdown.Toggle id="dropdown-basic" className="dropdown-btn">
-                <img src={Avatar} alt="avatar" />
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="/edit-profile">
-                  <PersonFill style={{ marginRight: '8px' }} />
-                  Edit Profile
-                </Dropdown.Item>
-                <Dropdown.Item href="">
-                  <GearFill style={{ marginRight: '8px' }} />
-                  Settings
-                </Dropdown.Item>
-                <Dropdown.Item href="/">
-                  <BoxArrowRight style={{ marginRight: '8px' }} />
-                  LogOut
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
-          </Nav>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/dashboard">Key Links</Nav.Link>
+              <Nav.Link href="#features">FAQ</Nav.Link>
+              <Nav.Link href="#pricing">Results</Nav.Link>
+              <Dropdown className="dropdown">
+                <Dropdown.Toggle id="dropdown-basic" className="dropdown-btn">
+                  <img src={Avatar} alt="avatar" />
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/edit-profile">
+                    <PersonFill style={{ marginRight: '8px' }} />
+                    Edit Profile
+                  </Dropdown.Item>
+                  <Dropdown.Item href="">
+                    <GearFill style={{ marginRight: '8px' }} />
+                    Settings
+                  </Dropdown.Item>
+                  <Dropdown.Item href="/">
+                    <BoxArrowRight style={{ marginRight: '8px' }} />
+                    LogOut
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

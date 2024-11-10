@@ -65,9 +65,42 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+    .login-container {
+        padding: 1rem;
+        background-position: top;
+    }
+
     .form-container {
-        width: 90%;
+        width: 100%;
         padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-container .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .form-container .form-label {
+        font-size: 0.85rem;
+    }
+
+    .alert-danger {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .form-container {
+        padding: 1rem;
+    }
+
+    .form-container h2 {
+        font-size: 1.25rem;
     }
 }

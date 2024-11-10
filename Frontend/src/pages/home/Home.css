@@ -34,3 +34,60 @@
     border-top-right-radius: 8px;
     border-top-left-radius : 8px;
 }
+
+/* Container styles for responsiveness */
+@media (max-width: 768px) {
+    .module-container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .module {
+        margin-bottom: 20px;
+        border-radius: 6px;
+    }
+
+    .module img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .module-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .module-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Further adjustments for smaller mobile screens */
+@media (max-width: 576px) {
+    .module-container .col {
+        padding: 10px;
+    }
+
+    .module {
+        margin-bottom: 15px;
+        padding: 1rem;
+    }
+
+    .module img {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+    }
+
+    .module-text {
+        margin-top: 5px;
+    }
+
+    .module-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .module-text p {
+        font-size: 0.85rem;
+    }
+}
